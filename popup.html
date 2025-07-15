@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🧭 PwC Portal Navigator</h1>
+    <div class="search-section">
+      <input type="text" id="searchInput" placeholder="Ask me anything about PwC portals...">
+      <button id="searchBtn">Search</button>
+    </div>
+    <div class="quick-actions">
+      <h3>Quick Actions</h3>
+      <button class="action-btn" data-action="login-help">Login Help</button>
+      <button class="action-btn" data-action="navigation-guide">Navigation Guide</button>
+      <button class="action-btn" data-action="troubleshoot">Troubleshoot</button>
+    </div>
+    <div id="results" class="results-section"></div>
+    <div class="portal-shortcuts">
+      <h3>Portal Shortcuts</h3>
+      <div class="shortcuts-grid">
+        <button class="shortcut-btn" data-portal="advisory">Advisory Portal</button>
+        <button class="shortcut-btn" data-portal="connected">Connected Source</button>
+        <button class="shortcut-btn" data-portal="conversations">Conversations</button>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
